@@ -18,6 +18,7 @@ namespace DotNet_BorneBanque
 		ChangePin = 4,
 		Home = 5,
 		Quit = 6,
+		
 	}
 
 	public class MyAccount
@@ -186,7 +187,7 @@ namespace DotNet_BorneBanque
 			{
 				Console.WriteLine("Choisissez une option. ");
 				_str = Console.ReadLine();
-				if (int.TryParse(_str, out result) && result >= 1 && result <= 5)
+				if (int.TryParse(_str, out result) && result >= 1 && result <= 6)
 				{
 					isChoiceOk = true;
 				}
